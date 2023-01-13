@@ -1,0 +1,32 @@
+p{
+    font-size: 25px;
+    text-align: center;
+    }
+    .cont{
+        color: blueviolet;
+    }
+    
+    .texto1{
+        margin-left: 40px;
+        font-size: 15px;
+        text-align: initial;
+        margin: 40px;
+    
+        
+    }
+    h3{
+        margin-left: 40px;   
+        margin-top: 15px;
+        color: darkcyan;
+        
+        
+    }
+    .val{
+        margin-left: 80px; 
+        font-size: 20px;  
+    }
+    li{
+       margin-left: 80px; 
+        font-size: 20px;  
+    }
+    

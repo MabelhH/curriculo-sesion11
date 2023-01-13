@@ -1,0 +1,32 @@
+<div class="container my-15">
+    <form [formGroup]="formLogin" (submit)="send()" >
+        <h1>contactos</h1>
+        <div class="mb-3">
+            <label for="nombre" class="form-label"><mark>Nombre:</mark></label>
+            <input type="text" formControlName="nombre"  class="form-control" id="nombre">
+          </div>
+          <div class="mb-3">
+            <label for="apellido" class="form-label"><mark>Apellido:</mark></label>
+            <input type="text"  formControlName="apellido" class="form-control" id="apellido">
+          </div>
+        <div class="mb-3">
+          <label for="email" class="form-label"><mark>Email:</mark></label>
+          <input type="email" formControlName="email" class="form-control" id="email" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label"><mark>Password:</mark></label>
+          <input type="password" formControlName="password" class="form-control" id="password">
+        </div>
+        <div class="mb-3">
+            <label for="telefono" class="form-label"><mark>Telefono:</mark></label>
+            <input type="number" formControlName="telefono" class="form-control" id="telefono">
+          </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" formControlName="checkbox" class="form-check-input" id="check">
+          <label class="form-check-label" for="check">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-info" [disabled]="formLogin.invalid" >Submit</button>
+      </form>
+</div>
+<h1 class="text-center text-info indice">Indice</h1>
+<img src="https://marketplace.canva.com/EAFFFbUMFcI/1/0/1600w/canva-certificado-reconocimiento-cl%C3%A1sico-elegante-azul-y-dorado-RO7Ro0gP-WQ.jpg" alt="">

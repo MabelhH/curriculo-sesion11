@@ -1,0 +1,44 @@
+<p  (click)=" mostrarocultar()">{{mensage_contacto}}</p>
+<div class="cont" *ngIf="mostrar">
+    <p>{{mensage}}</p>
+</div>
+
+<h3>Perfil Profesional</h3>
+<p class="texto1">Una bibliografía con notas descriptivas, en inglés conocida como Annotated Bibliographies, es un tipo de lista de referencias que van seguidas de breves descripciones (o anotaciones) del trabajo en cuestión.
+
+    El formato y ordenación de la bibliografía en las Normas APA debe ser el mismo de la lista de referencias. Mismo margen, mismo interlineado, mismo tipo de sangría francesa, etc. Cada entrada en la lista de bibliografías también deben tener la misma información que las entradas en la lista de referencias (¿Quién? ¿Cuándo? ¿Qué? ¿Dónde?).
+    
+    Cualquier información extra, como por ejemplo, número de referencias a incluir, extensión y enfoque de cada anotación, debe ser preguntado directamente al instructor de tu trabajo académico.</p>
+
+<h3>valores</h3>
+<div class="row">
+  <div class="col-6  val">
+    <ul>
+        <li *ngFor=" let person of valores">
+         {{person}}
+        </li>   
+    </ul>
+   </div>
+    <div class="col-2  ">
+        <ul>
+            <li *ngFor=" let person of valores2">
+             {{person}}
+            </li> 
+        </ul>
+    </div>
+    <div class="experiencia">
+     <h3>Experiencia</h3>
+        <li>experiencias en ventas 4 meses</li>
+        <li>trabajo como almacen en una micro empresa</li>
+        <li>vendo independiente</li>
+        <li>tengo conocimitos basicos de pasteleria</li>
+     
+     <h3>Estudios</h3>
+        <li>exel intermedio</li>
+        <li>word intermedio</li>
+        <li>ingles basico</li>
+        <li>power poind intermedio</li>
+        <li>finansas</li>
+        <li>pasteleria</li>
+    </div>
+</div>
